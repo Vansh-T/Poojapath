@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Filter, Grid, List, ChevronDown, X } from 'lucide-react';
 import ProductCard from '../../components/product/ProductCard';
-import { SAMPLE_PRODUCTS } from '../../data/products';
+import { products } from '../../data/products';
 
 const CATEGORIES = ['All', 'Electronics', 'Accessories', 'Footwear', 'Audio'];
 const SORT_OPTIONS = [
@@ -25,7 +25,7 @@ export default function ProductsPage() {
 
   // Filtered and sorted products
   const filteredProducts = useMemo(() => {
-    let filtered = [...SAMPLE_PRODUCTS];
+    let filtered = [...products];
 
     // Search filter
     if (searchQuery) {
@@ -242,7 +242,7 @@ export default function ProductsPage() {
           className="mb-6"
         >
           <p className="text-gray-600">
-            Showing {filteredProducts.length} of {SAMPLE_PRODUCTS.length} products
+            Showing {filteredProducts.length} of {products.length} products
             {selectedCategory !== 'All' && ` in ${selectedCategory}`}
             {searchQuery && ` matching "${searchQuery}"`}
           </p>
