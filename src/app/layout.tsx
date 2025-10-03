@@ -10,7 +10,7 @@ import CartSidebar from "../components/cart/CartSidebar";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "PoojaPath - Sacred Items & Spiritual Essentials | Made for Devotees 🕉️",
+  title: "PoojaPath - Sacred Items & Spiritual Essentials | Made for Devotees ",
   description: "India's most trusted spiritual ecommerce platform. Shop authentic Pooja items, mata ki chunri, holy books, chandan, havan materials, diyas, and more sacred products with fast delivery across India.",
   keywords: "pooja items, spiritual products, hindu religious items, havan materials, chandan, mata ki chunri, holy books, temples, prayer items, diyas, incense, rudraksha, spiritual shopping, devotional items, puja accessories, sacred products, religious books, spiritual gifts, temple items, festival items, navratri items, diwali items, karwa chauth, hindu festivals, spiritual ecommerce, devotee shopping",
   authors: [{ name: "PoojaPath Team" }],
